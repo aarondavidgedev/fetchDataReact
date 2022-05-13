@@ -29,7 +29,6 @@ function App() {
   if (error) return "Error";
 
   return (
-
     <div className="App">
       <h1>Hello world, your React.js app is working</h1>
       <pre>{JSON.stringify(data, null, 2)}</pre>
