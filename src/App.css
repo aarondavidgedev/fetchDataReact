@@ -1,0 +1,12 @@
+.student-info {
+    border: 1px solid black;
+}
+
+#student-pic {
+    margin-left: 2%;
+    border: 1px solid grey;
+    border-radius: 80%;
+    float: left;
+    height: 80px;
+    width: 80px;
+}
