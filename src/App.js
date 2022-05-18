@@ -39,12 +39,12 @@ function App() {
           <div className='student-info'>
             <img id='student-pic' src={studentInfo.pic} alt='display' img />
             <h2 id='student-name'>{studentInfo.firstName}&nbsp;{studentInfo.lastName}</h2>
-            <p id='student-text'>
-              Email: {studentInfo.email}<br></br>
-              Company: {studentInfo.company}<br></br>
-              Skill: {studentInfo.skill}<br></br>
-              Average: {avg}
-            </p>
+            <div id='student-text'>
+              <div>Email: {studentInfo.email}</div>
+              <div>Company: {studentInfo.company}</div>
+              <div>Skill: {studentInfo.skill}</div>
+              <div>Average: {avg}</div>
+              </div>
           </div>
         )
       })}
