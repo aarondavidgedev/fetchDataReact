@@ -1,12 +1,23 @@
-.student-info {
-    border: 1px solid black;
-}
 
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+.student-info {
+    border-bottom: 1px solid grey;
+    font-family: 'Raleway', sans-serif;
+}
+#student-name {
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
 #student-pic {
-    margin-left: 2%;
     border: 1px solid grey;
     border-radius: 80%;
     float: left;
     height: 80px;
-    width: 80px;
+    width: 80px;   
+}
+#student-text {
+    
 }

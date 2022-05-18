@@ -25,7 +25,7 @@ function App() {
   }
 
 
-  
+
   if (loading) return "Loading";
   if (error) return "Error";
 
@@ -34,18 +34,17 @@ function App() {
     <div className="App">
       <h1 id='page-heading'>Frontend Assessment - Student Profile</h1>
       {data.map((studentInfo, index) => {
-
-const avg = studentInfo.grades.reduce((a,b) => a + parseFloat(b),0) / studentInfo.grades.length;
+        const avg = studentInfo.grades.reduce((a, b) => a + parseFloat(b), 0) / studentInfo.grades.length;
         return (
           <div className='student-info'>
             <img id='student-pic' src={studentInfo.pic} alt='display' img />
             <h2 id='student-name'>{studentInfo.firstName}&nbsp;{studentInfo.lastName}</h2>
-            <p> Email: {studentInfo.email}<br></br>
+            <p id='student-text'>
+              Email: {studentInfo.email}<br></br>
               Company: {studentInfo.company}<br></br>
               Skill: {studentInfo.skill}<br></br>
               Average: {avg}
             </p>
-           
           </div>
         )
       })}
